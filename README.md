@@ -62,20 +62,6 @@ python main.py <image_path> [options]
    python main.py image.jpg -o output_image.png
    ```
 
-## Functionality
-
-- **`add_watermark(input_image_path, output_image_path, watermark_text, font_path=None, position="bottom-right", opacity=128)`**:
-  Adds a watermark text to the input image and saves it to the output path.
-
-- **`get_watermark(filepath)`**:
-  Reads the watermark text from a specified file.
-
-- **`parse_args()`**:
-  Parses the command-line arguments.
-
-- **`main()`**:
-  The main function that orchestrates the execution of the script.
-
 ## Notes
 - Ensure that the watermark text file (`watermark.txt`) exists or provide the text directly using the `--watermark` option.
 - The watermark opacity is set by default to 128 (out of 255), which gives a semi-transparent effect. You can adjust this by modifying the script or adding an additional option for opacity.
